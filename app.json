@@ -1,0 +1,9 @@
+{
+    "name": "amanda-sti-frontend",
+    "description": "Javascript frontend",
+    "repository": "https://github.com/knyttali/amanda-sti-frontend",
+    "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
+    "keywords": ["node", "express", "heroku"],
+    "image": "heroku/nodejs"
+  }
+  
