@@ -15,20 +15,19 @@ if(user==null){
 const UPDATE_FIRST = 0;
 const UPDATE_INTERVAL = 5000;
 
-setTimeout(age,UPDATE_FIRST)
 
-function age(){
-    var xhr = new XMLHttpRequest()
+function getTable(){
+    var xhr = new XMLHttpRequest();
     
-    score = 2000
-    
-    xhr.open("GET", "/js/data.json")
+    xhr.open("GET", "/js/data.json");
     xhr.onload = function(){
         let data = JSON.parse(this.response)
         createTable(data)
-        setTimeout(age,UPDATE_INTERVAL)
     }
-    xhr.send()
+    xhr.send();
+}
+function hideTable(){
+    
 }
 
 function createTable(data){
